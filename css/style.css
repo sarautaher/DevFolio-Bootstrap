@@ -1,0 +1,230 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.navbar-nav .nav-link.active ,.navbar-nav .nav-link{
+    position: relative;
+}
+.navbar-nav .nav-link.active::before{
+    position:absolute;
+    content: "";
+    width: 75%;
+    height: 2px;
+    background-color: #fff;
+    left:10%;
+    top:90%; 
+    opacity: 1;
+}
+.navbar-nav .nav-link::before{
+    content: "";
+     width:0%;
+    height: 2px;
+    background-color:#fff;
+    position: absolute;
+    left:9%;
+    top:90%;
+    transition: all 0.5s;
+    opacity: 0;
+     
+    }
+.navbar-nav .nav-link:hover::before{
+     width: 65%;
+     opacity: 1;
+    }
+#home{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.521),rgba(0,0,0, 0.521)) ,url(../DevFolioimages/hero-bg.jpg) ;
+    background-size: cover;
+    background-position: center center;
+    overflow: auto;
+    
+}
+#home .home-info{
+    margin-top: 230px;
+    width:100%;
+    
+}
+#home .auto-type::after{
+    font-size: 40px;
+    content: "";
+   font-weight: 500;
+   animation-name:move ;
+   animation-iteration-count: infinite;
+   animation-duration: 10s;
+}
+@keyframes move{
+    0%{
+        content: "De|";
+    }
+    5%{
+        content: "Des|";
+    }
+    10%{
+        content: "Desi|";
+    }
+    15%{
+        content: "Desig|";
+    }
+    20%{
+        content: "Design|";
+    }
+    25%{
+        content: "Designer|";
+    }
+    30%{
+        content: "De|";
+    }
+    35%{
+        content: "Deve|";
+    }
+    40%{
+        content: " Develo|";
+    }
+    45%{
+        content: "Develop|";
+    }
+    50%{
+        content: "Developer|"; 
+    }
+    55%{ content: "Free|"}
+    60%{
+        content: "Freela|";
+    }
+    65%{
+        content: "Freelan|";
+    }
+    70%{
+       
+        content: "Freelanc|";
+    }
+    75%{
+        content: "Freelancer|";
+    }
+    80%{
+        content: "photo|";
+       
+    }
+    85%{
+        content: "photog|";
+    }
+    90%{
+        content: "photogra|";
+    }
+    95%{
+        content: "photograph|";
+    }
+    100%{
+       content: "photographer";
+    }
+}
+
+#home h1{
+    font-size: 72px; 
+
+}
+.about-information h5{
+    position: relative;
+    font-size:32px;
+}
+.about-information h5::after{
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 3px;
+    background-color:#0078FF;
+    top:90%;
+    left: 0%;
+    opacity: 1;
+}
+#SERVICES{   background-color: #F5F5F5;}
+.services-text h3{
+    font-size:48px ;
+}
+.services-text p ,.service-text h3{
+    position: relative;
+}
+.services-text p::after ,.service-text h3::after{
+    content: "";
+    width: 5%;
+    position: absolute;
+    background-color: #0078FF;
+    height: 3px;
+    left:50%;
+    top:170%;
+    transform: translateX(-50%);
+    opacity: 1;
+}
+.service-text h3::after{
+    left: 10%;
+    width: 20%;
+}
+#SERVICES i{
+    border: #0078FF 10px solid ;
+    padding: 35px;
+    transition: all 1s;
+}
+#SERVICES i:hover{
+    background-color: #0078FF;
+    color: #fff;
+    border:10px solid #CDE1F8 ;
+}
+.work-count{
+    background-image: linear-gradient(rgb(6, 131, 248,0.65),rgb(6, 131, 248,0.65)),url(../DevFolioimages/counters-bg.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.work1 i{
+    border: #CDE1F8 10px solid;
+    padding: 25px;
+}
+.port-info i{
+    color: #0078FF;
+    border: 2px #0078FF solid;
+}
+.port-info img{
+    transition: all 1s;
+}
+.port-info img:hover{
+    transform: scale(1.9);
+}
+ .port-info span{
+    color:#0078FF;
+}
+.work-cars{
+    background-image: linear-gradient(rgb(6, 131, 248,0.65),rgb(6, 131, 248,0.65)),url(../DevFolioimages/overlay-bg.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.contact{
+    background-image: linear-gradient(rgb(6, 131, 248,0.65),rgb(6, 131, 248,0.65)),url(../DevFolioimages/counters-bg.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.form-control{
+    border-radius: 0%;
+}
+
+.form .btn{
+    background-color:#0078FF ;
+    transition: all 0.5s;
+    border:5px solid #fff;
+}
+.form .btn:hover{
+    background-color:#3393FF  ;
+    border:5px solid #CDE1F8;
+}
+.contact-icon i{
+    border: #0078FF solid 2px;
+    padding: 10px;
+    font-size: 20px;
+    transition: all 1s;
+}
+.contact-icon i:hover{
+    background-color: #0078FF;
+    color: #fff;
+    border:10px solid #CDE1F8 ;
+}
